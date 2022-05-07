@@ -1,6 +1,6 @@
-@import "vars.scss";
-@import "reset.scss";
-@import "ui.scss";
+@import "vars";
+@import "reset";
+@import "ui";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -21,30 +21,30 @@ body {
 
 //Header ========================
 
-@import "header.scss";
+@import "header";
 
 //Main content =================
 
-@import "main.scss";
+@import "main";
 
 
 // Products slider (main content) =====================
 
-@import "products_slider.scss";
+@import "products_slider";
 
 
 //BRANDS BRANDS-SLIDER ====================
 
-@import "brands.scss";
+@import "brands";
 
 // Text-block ======================
 
-@import "text-block.scss";
+@import "text-block";
 
 // Page info ===========================
 
-@import "page-info.scss";
+@import "page-info";
 
 //Footer ===================
 
-@import "footer.scss";
+@import "footer";
