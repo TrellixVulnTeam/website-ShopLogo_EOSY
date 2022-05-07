@@ -1,0 +1,50 @@
+@import "vars.scss";
+@import "reset.scss";
+@import "ui.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "UniSansHeayBold";
+  src: url("../fonts/UniSans.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+//Header ========================
+
+@import "header.scss";
+
+//Main content =================
+
+@import "main.scss";
+
+
+// Products slider (main content) =====================
+
+@import "products_slider.scss";
+
+
+//BRANDS BRANDS-SLIDER ====================
+
+@import "brands.scss";
+
+// Text-block ======================
+
+@import "text-block.scss";
+
+// Page info ===========================
+
+@import "page-info.scss";
+
+//Footer ===================
+
+@import "footer.scss";

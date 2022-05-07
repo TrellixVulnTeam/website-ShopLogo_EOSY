@@ -1,0 +1,27 @@
+._arrow_prev {
+  background: url("../img/main/product slider/arrow.png") no-repeat 0 0;
+  height: 30px;
+  width: 60px;
+  transform: rotate(-180deg);
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1) translateX(-3px) rotate(180deg);
+  }
+}
+
+._arrow_next {
+  background: url("../img/main/product slider/arrow.png") no-repeat 0 0;
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+  margin-left: -37px;
+  @media (max-width: $md3+px) {
+    margin-left: -80%;
+  }
+  @media (max-width: 500px) {
+    margin-left: -69%;
+  }
+  &:hover {
+    transform: scale(1.1) translateX(3px);
+  }
+}

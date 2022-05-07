@@ -1,0 +1,33 @@
+._arrow_prev {
+  background: url("../img/main/product slider/arrow.png") no-repeat 0 0;
+  height: 30px;
+  width: 60px;
+  transform: rotate(-180deg);
+  cursor: pointer;
+}
+._arrow_prev:hover {
+  transform: scale(1.1) translateX(-3px) rotate(180deg);
+}
+
+._arrow_next {
+  background: url("../img/main/product slider/arrow.png") no-repeat 0 0;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  margin-left: -37px;
+}
+@media (max-width: 767.98px) {
+  ._arrow_next {
+    margin-left: -80%;
+  }
+}
+@media (max-width: 500px) {
+  ._arrow_next {
+    margin-left: -69%;
+  }
+}
+._arrow_next:hover {
+  transform: scale(1.1) translateX(3px);
+}
+
+/*# sourceMappingURL=brands.css.map */

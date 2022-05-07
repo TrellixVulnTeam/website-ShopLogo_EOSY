@@ -1,0 +1,47 @@
+@import "vars.scss";
+@import "ui.scss";
+.page__brands {
+  margin-bottom: 32px;
+}
+.brands-slider {
+  width: 100%;
+  border-top: 3px dotted grey;
+  border-bottom: 3px dotted grey;
+  height: 100px;
+  padding-top: 10px;
+  .brands-slide__container.container {
+    margin: 20px auto;
+    padding: 0 80px;
+    position: relative;
+    .brands-slide__body.swiper-container {
+      .brands-slide__images {
+
+
+        .swiper-slide {
+          width: 100%;
+          margin-right: 25px;
+          .brands-slide__img {
+            padding: 0 10px; /*Якщо зобр буде дуже широке, воно зможе адаптуватися хавдяки педінагм*/
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .brands-slide__arrow.brands-slide__arrow_prev._arrow_prev {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      transform: rotate(180deg);
+      &:hover {
+        transform: scale(1.1) translateX(-3px) rotate(180deg);
+      }
+    }
+    .brands-slide__arrow.brands-slide__arrow_next._arrow_next {
+      position: absolute;
+      top: 5px;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import "vars.scss";
+@import "ui.scss";
+
+.page__text {
+  margin-bottom: 38px;
+}
+
+.text-block {
+  .text-block.container {
+    @media (max-width: $md2+px) {
+      padding: 0;
+    }
+    .text-block__body {
+      background: url("../img/main/bg-text-block.jpg") 0 0 no-repeat;
+      padding: 45px 35px;
+      background-size: cover;
+      height: auto;
+      @media (max-width: $md2+px) {
+        padding: 25px 20px 15px 20px ;
+      }
+      .text-block__title {
+          font-size: 30px;
+        font-family: "UniSansHeayBold", sans-serif;
+          color: rgb(34, 183, 202);
+          text-transform: uppercase;
+          line-height: 1.2;
+        margin-bottom: 28px;
+
+      }
+      .text-block__row {
+        display: flex;
+        margin: 0 -30px;
+        @media (max-width: $md2+px) {
+          display: block;
+        }
+        /*Зверни увагі ну мінусовий мардж і потім педінг, щоб не бавитися з ласчайлдами*/
+        .text-block__column {
+          flex: 1 0 50%;
+          padding: 10px 30px;
+
+          p {
+            color: white;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            margin-bottom: 20px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+          p {}
+        }
+        .text-block__column {
+          position: relative;
+          .text-block-label {
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: white;
+
+
+
+          }
+          .text-block__list {
+            color: white;
+            .text-block__item {
+              font-size: 12px;
+              display: block;
+              margin-bottom: 10px;
+              line-height: 20px;
+              &:before {
+                content: "";
+                background: url("../img/main/li-arrow.png") 0 2px no-repeat;
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                margin: 0 17px 0 7px;
+              }
+              @media (max-width: $md1) {
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+          .text-block__img {
+            position: absolute;
+            bottom: -150px;
+            right: -0;
+            @media (max-width: $md1) {
+              display: none;
+              img {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
