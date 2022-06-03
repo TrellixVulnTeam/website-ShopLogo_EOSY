@@ -16,6 +16,6 @@
 - Burger menu;
 - Slider Swiper;
 - Custom checkboxes;
-- Accessibility;
+- Accessibility; 
 - Optimized project build with Gulp;
 
